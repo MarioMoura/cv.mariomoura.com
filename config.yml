@@ -1,0 +1,346 @@
+## Example Config file
+baseURL: "https://cv.mariomoura.com"
+theme: "terminalcv"
+title: "Mario's CV"
+
+params:
+  version: "2.0.0"
+  description: "My terminal cv"
+  prompt:
+    core:
+      text: "you@mariomoura.com"
+      color: "violet"
+      before: "["
+      beforeColor: "darkred"
+      after: '\]'
+      afterColor: "darkred"
+      # separator: '-'
+    separator:
+      text: "-"
+      # color:
+    path:
+      before: "["
+      beforeColor: "darkred"
+      text: "~/"
+      color: "teal"
+      after: '\]'
+      afterColor: "darkred"
+    extra:
+      text: ": "
+      color: "orange"
+
+  promptColor: grey
+  promptSimbols: ":~$"
+  promptSimbolsColor: grey
+  startxLocation: /mariomoura.pdf
+  # useLess: true
+  #exitLocation: "about:blank"
+  exitMessage: "[Session completed, the browserwindow can be safely closed]"
+  source: true
+  #use a ‎ (blank character) if your first character of the ascii art is a whitespace
+  greeting: |
+    ‎ __  __            _       __  __
+    |  \/  | __ _ _ __(_) ___ |  \/  | ___  _   _ _ __ __ _
+    | |\/| |/ _` | '__| |/ _ \| |\/| |/ _ \| | | | '__/ _` |
+    | |  | | (_| | |  | | (_) | |  | | (_) | |_| | | | (_| |
+    |_|  |_|\__,_|_|  |_|\___/|_|  |_|\___/ \__,_|_|  \__,_|
+      ____                _            _                         _ _
+     / ___|   _ _ __ _ __(_) ___ _   _| |_   _ _ __ ___   __   _(_) |_ __ _  ___
+    | |  | | | | '__| '__| |/ __| | | | | | | | '_ ` _ \  \ \ / / | __/ _` |/ _ \
+    | |__| |_| | |  | |  | | (__| |_| | | |_| | | | | | |  \ V /| | || (_| |  __/
+     \____\__,_|_|  |_|  |_|\___|\__,_|_|\__,_|_| |_| |_|   \_/ |_|\__\__,_|\___|
+
+    If you need the graphical version please type 'startx'
+    (or if you are boring: https://cv.mariomoura.com/mariomoura.pdf)
+
+    Type '[[;yellow;]help]' for a list of available commands
+
+    The items here are organized using the WoW item quality table:
+    +----------+-----------+------+------+----------+--------+------+
+    | [[;#e6cc80;]Artifact] | [[;orange;]Legendary] | [[;blueviolet;]Epic] | [[;royalblue;]Rare] | [[;lime;]Uncommon] | [[;white;]Common] | [[;gray;]Poor] |
+    +----------+-----------+------+------+----------+--------+------+
+
+    [[;gray;]Disclaimer: I'm not a designer]
+  bootsequence: |
+    User request detected
+    Reserving Cloud Resources
+    ............................
+    Cloud Network ready
+    ........
+    Cloud Instance ready
+    .......................
+
+    [ PCI configuration begin ]
+
+    [ PCI configuration end, bridges 12 devices 16 ]
+
+    [DummyOs]
+
+    Boot Complete, accepting user input.
+
+  whois:
+    # settings:
+    #   useLess: true
+    details:
+      name: "Mario Moura"
+      profession: "SysAdmin | DevOps Engineer"
+      location: "Brazil"
+      email: "mm@mariomoura.com"
+      homelink: "https://mariomoura.com"
+      description: |
+        - Vim wizard
+        - Bash fan
+        - Regex interpreter
+        - Linux advocate
+        - FOOS enjoyer
+
+  social:
+    # settings:
+    #   useLess: true
+    #   hideName: true
+    details:
+      - name: "github"
+        url: "https://github.com/MarioMoura"
+      - name: "linkedin"
+        url: "https://linkedin.com/mario-moura"
+      - name: "site"
+        url: "https://mariomoura.com"
+      - name: "CV"
+        url: "https://cv.mariomoura.com"
+
+  work:
+    # settings:
+    #   useLess: true
+    details:
+      - jobTitle: DevOps Engineer
+        color: red
+        company: "Metaltoad"
+        location: "Portland, Oregon"
+        date: Oct 2023 - Present
+        description: "Focused on Cloud infrastructure and CI/CD"
+
+      - jobTitle: Systems Administrator
+        color: red
+        company: "Metaltoad"
+        location: "Portland, Oregon"
+        date: Nov 2022 - Oct 2023
+        description: "Focused on Linux and automation"
+
+      - jobTitle: Systems Administrator
+        color: red
+        company: "Independent Consultant"
+        location: "Brazil"
+        date: Jan 2020 - Dec 2024
+        description: "Focused on plain Linux administration"
+
+  education:
+    details:
+      - courseName: CESUPA
+        color: teal
+        date: Jan 2017 - Jun 2022
+        description: Bachelor in Computer Science
+
+  skills:
+    settings:
+      useLess: true
+    details:
+      - name: Bash
+        color: orange
+        percentage: 90
+        Description: I use it for virtually everything.
+      - name: Python
+        color: royalblue
+        percentage: 70
+        Description: CI/CD scripting and backend work.
+      - name: AWK
+        color: royalblue
+        percentage: 70
+        Description: I use it a lot for scripts too complex for bash.
+      - name: C
+        percentage: 50
+        color: lime
+        Description: Has been a long time.
+      - name: Type/Javascript
+        percentage: 40
+        Description: No, i don't do web work, only use this on CDK.
+      - name: Wordpress
+        color: blueviolet
+        percentage: 80
+        Description: Bootstraped and maintained a lot of instances.
+      - name: Drupal
+        percentage: 50
+        color: lime
+        Description: Bootstraped and maintained some instances.
+      - name: OpenNext
+        color: blueviolet
+        percentage: 80
+        Description: Maintained a terraform module to deploy this, bootstraped multiple high traffic sites.
+      - name: Cloudfront
+        color: orange
+        percentage: 90
+        Description: Countless distributions deployed.
+      - name: Akamai
+        color: royalblue
+        percentage: 70
+        Description: Dealt with some very high traffic properties.
+      - name: Git
+        color: orange
+        percentage: 90
+        Description: I used git (not GitHub) on a daily basis, for virtually everything.
+      - name: Docker
+        color: blueviolet
+        percentage: 85
+        Description: Used to be a Linux engineer dealing exclusively with docker.
+      - name: Vim
+        color: orange
+        percentage: 90
+        Description: My daily text-editor.
+      - name: Linux
+        color: orange
+        percentage: 90
+        Description: My daily OS.
+      - name: GithubActions
+        color: orange
+        percentage: 90
+        Description: My go-to CI/CD provider.
+      - name: AWS Code Pipeline
+        color: royalblue
+        percentage: 70
+        Description: Not extensive, but i mantained a few pipelines.
+      - name: Jenkins
+        percentage: 50
+        color: lime
+        Description: I like Jenkins, but it has been a while.
+      - name: AWS
+        color: orange
+        percentage: 90
+        Description: Virtually my life for the last 5 years.
+      - name: GCP
+        percentage: 40
+        color: white
+        Description: Some experience, not a lot.
+      - name: Vultr
+        percentage: 50
+        color: lime
+        Description: My personal stuff is hosted here.
+      - name: DigitalOcean
+        percentage: 50
+        color: lime
+        Description: Used to host stuff in here.
+      - name: Locaweb
+        percentage: 50
+        color: lime
+        Description: Also used to host stuff in here.
+      - name: Terraform
+        color: orange
+        percentage: 90
+        Description: Together with AWS, this is my bread and butter.
+      - name: OpenTofu
+        color: orange
+        percentage: 90
+        Description: I actually prefer this over Terraform.
+      - name: Cloudformation
+        percentage: 90
+        Description: I generally use this where Terraform/OpenTofu is not ideal.
+      - name: AWS CDK
+        color: lime
+        percentage: 65
+        Description: Only use when I cannot use Terraform/OpenTofu.
+
+  languages:
+    # settings:
+    #   useLess: true
+    details:
+      - name: Portuguese
+        color: orange
+        percentage: 100
+        description: Native
+
+      - name: English
+        color: orange
+        percentage: 95
+        description: C1/C2
+
+      - name: French
+        color: lime
+        percentage: 50
+        description: A2/B1
+
+
+  projects:
+    # settings:
+    #   useLess: true
+    details:
+      - title: Terraform private registry
+        color: darkred
+        date: since Sep 2024
+        #link: https://example.com
+        description: Self-hosted Terraform registry for internal usage.
+
+      - title: OIDC Terraform bootstraper
+        color: darkred
+        date: since Jun 2023
+        #link: https://example.com
+        description: Script to automatically bootstrap Terraform pipeline without using hard-credentials.
+
+  certifications:
+    # settings:
+    #   useLess: true
+    details:
+      - certName: AWS Security -- Specialist
+        color: orange
+        company: AWS
+        date: Mar 2025 - Mar 2027
+        badge:
+        #description: Lorem Ipsum
+      - certName: Terraform Associate (003)
+        color: blueviolet
+        company: Hashicorp
+        date: Jun 2024 - Mar 2026
+        badge:
+        #description: Lorem Ipsum
+      - certName: AWS DevOps Engineer - Professional
+        color: blueviolet
+        company: AWS
+        date: Apr 2024 - Mar 2027
+        badge:
+        #description: Lorem Ipsum
+      - certName: AWS SysOps Administrator
+        color: royalblue
+        company: AWS
+        date: Aug 2023 - Mar 2027
+        badge:
+        #description: Lorem Ipsum
+      - certName: AWS Cloud Practitioner
+        color: lime
+        company: AWS
+        date: Apr 2023 - Mar 2027
+        badge:
+        #description: Lorem Ipsum
+      - certName: Duolingo English Test 2021
+        color: lime
+        company: DuoLingo
+        date: Aug 2021 - Aug 2023
+        badge:
+        #description: Lorem Ipsum
+      - certName: IELTS 7.5 2019
+        color: orange
+        company: DuoLingo
+        date: Oct 2019 - Oct 2021
+        badge:
+        #description: Lorem Ipsum
+
+  misc:
+    # settings:
+    #   useLess: true
+    commandName: mytools
+    title: "The tools that I use"
+    titleColor: teal
+    contentColor: orange
+    content: |
+      Text editor: Vim
+      OS: Linux
+      Shell: Bash
+      Code versioning: Git
+      Containers: Docker
+      Documents: LaTex
